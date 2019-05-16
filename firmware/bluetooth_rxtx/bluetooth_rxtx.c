@@ -846,8 +846,8 @@ void DMA_IRQHandler(void) {
 		if (DMACIntErrStat & (1 << 7)) {
 			DMACIntErrClr = (1 << 7);
 			// FIXME do something better here
-			USRLED_SET;
-			while (1) { }
+			// USRLED_SET;
+			// while (1) { }
 		}
 	}
 }
